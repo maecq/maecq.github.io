@@ -4,39 +4,39 @@ export default function Testimonials() {
   const data = [
     {
       id: 1,
-      name: "Tom Durden",
-      title: "Senior Developer",
+      name: "STI College",
+      title: "Information Technology",
       img:
-        "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "assets/sticollege.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/twitter.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        "STI College (formerly known as Systems Technology Institute) is the largest network of for-profit information technology based colleges in the Philippines. ",
     },
     {
       id: 2,
-      name: "Alex Kalinski",
-      title: "Co-Founder of DELKA",
+      name: "Robertson College",
+      title: "Full Stack Developer",
       img:
-        "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "assets/robertsoncollege.png?auto=compress&cs=tinysrgb&dpr=2&w=800",
       icon: "assets/youtube.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+        "Robertson College is a private Canadian career training institution headquartered in Winnipeg, Canada. Robertson has campus locations in Winnipeg in Manitoba and Edmonton and Calgary in Alberta.",
       featured: true,
     },
     {
       id: 3,
-      name: "Martin Harold",
-      title: "CEO of ALBI",
+      name: "La Verdad College",
+      title: "High School Diploma",
       img:
-        "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "assets/laverdad.png?auto=compress&cs=tinysrgb&dpr=2&w=800",
       icon: "assets/linkedin.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+        "The La Verdad Christian College or LVCC is a private non-stock, non-sectarian educational institution established in Apalit, Pampanga, Philippines.",
     },
   ];
   return (
     <div className="testimonials" id="testimonials">
-      <h1>Testimonials</h1>
+      <h1>Education</h1>
       <div className="container">
         {data.map((d) => (
           <div className={d.featured ? "card featured" : "card"}>
