@@ -26,7 +26,7 @@ export default function Intro() {
           <h3>Hi There, I'm</h3>
           <h2>Mae Quitane</h2>
           <h3>
-            Graduate Student <span ref={textRef}></span>
+            2021 Graduate Student <span ref={textRef}></span>
           </h3>            
             <span>Recent gradute of FULL STACK DEVELOPER Program of Robertson College.</span>
             <span>Looking for a perfect venue to have a career growth.</span>
