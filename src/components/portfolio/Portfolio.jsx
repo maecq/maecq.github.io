@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import PortfolioList from "../portfolioList/PortfolioList";
+//import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
   featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
+  //webPortfolio,
+  //mobilePortfolio,
   designPortfolio,
-  contentPortfolio,
+  //contentPortfolio,
 } from "../../data";
 
 export default function Portfolio() {
@@ -15,23 +15,12 @@ export default function Portfolio() {
   const list = [
     {
       id: "featured",
-      title: "Featured",
+      title: "Developer",
     },
-    {
-      id: "web",
-      title: "Web App",
-    },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
+    
     {
       id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
+      title: "Administrative",
     },
   ];
 
@@ -40,17 +29,9 @@ export default function Portfolio() {
       case "featured":
         setData(featuredPortfolio);
         break;
-      case "web":
-        setData(webPortfolio);
-        break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
+
       case "design":
         setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
         break;
       default:
         setData(featuredPortfolio);
@@ -59,28 +40,23 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <h1>Experience</h1>
-      <ul>
-        {list.map((item) => (
-          <PortfolioList
-            title={item.title}
-            active={selected === item.id}
-            setSelected={setSelected}
-            id={item.id}
-          />
-        ))}
-      </ul>
-      <div className="container">
-        {data.map((d) => (
-          <div className="item">
-            <img
-              src={d.img}
-              alt=""
-            />
-            <h3>{d.title}</h3>
-          </div>
-        ))}
-      </div>
+      <br></br>
+      <br></br>
+      <h2>Customer Support/Order Checker (2018-2021)</h2>
+      <br></br>
+      <h2>Gaspard Regalia Inc.</h2>
+        <h3>Checks and validates all processed orders before sending to shipping </h3>
+        <h3>Communicates with the processing staff and support staffs regarding shipping orders. </h3>
+        <h3>Creates and manages a website for each client/school that would have an online order for their students</h3>
+        <h3>Manages cancellations and refund orders using the created client's website. </h3>
+        <h3>Monitor and manages recovered stocks after graduation season.</h3>
+        
+
     </div>
   );
 }

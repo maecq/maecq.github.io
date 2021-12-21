@@ -10,7 +10,7 @@ export default function Testimonials() {
         "assets/sticollege.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/twitter.png",
       desc:
-        "STI College (formerly known as Systems Technology Institute) is the largest network of for-profit information technology based colleges in the Philippines. ",
+        "Top performing student in the 90th percentile of my class. ",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export default function Testimonials() {
         "assets/robertsoncollege.png?auto=compress&cs=tinysrgb&dpr=2&w=800",
       icon: "assets/youtube.png",
       desc:
-        "Robertson College is a private Canadian career training institution headquartered in Winnipeg, Canada. Robertson has campus locations in Winnipeg in Manitoba and Edmonton and Calgary in Alberta.",
+        "Top performing student in the 90th percentile of my class.",
       featured: true,
     },
     {
@@ -31,11 +31,14 @@ export default function Testimonials() {
         "assets/laverdad.png?auto=compress&cs=tinysrgb&dpr=2&w=800",
       icon: "assets/linkedin.png",
       desc:
-        "The La Verdad Christian College or LVCC is a private non-stock, non-sectarian educational institution established in Apalit, Pampanga, Philippines.",
+        "Top performing student in the 90th percentile of my class.",
     },
   ];
   return (
     <div className="testimonials" id="testimonials">
+      <br></br>
+      <br></br>
+      <br></br>
       <h1>Education</h1>
       <div className="container">
         {data.map((d) => (
