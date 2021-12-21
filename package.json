@@ -1,9 +1,7 @@
 {
-  "homepage": "https://maecq.github.io/portfolio/",
-  "name": "portfolio",
-
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/maecq/maecq.github.io.git",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
@@ -20,7 +18,7 @@
   },
   "scripts": {
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
